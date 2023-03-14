@@ -7,5 +7,10 @@
 
 AShooterUE5CppGameModeBase::AShooterUE5CppGameModeBase()
 {
+	/**
+	* Agregamos el player character a la scena, asignandolo a DefaultPawnClass
+	* verificable en el editor de UE:
+	* World Settings -> Selected Game Mode -> Default Pawn Class
+	*/
 	DefaultPawnClass = APlayerCharacter::StaticClass();
 }
