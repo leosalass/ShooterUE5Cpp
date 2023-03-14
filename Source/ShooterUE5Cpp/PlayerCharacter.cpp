@@ -15,7 +15,11 @@ APlayerCharacter::APlayerCharacter()
 void APlayerCharacter::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
+	/**
+	 * probando comentarios en console
+	 */
+	UE_LOG(LogTemp, Warning, TEXT("Log temporal de prueba usando un tipo warning"));
 }
 
 // Called every frame
