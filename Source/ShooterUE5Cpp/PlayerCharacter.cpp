@@ -25,6 +25,16 @@ void APlayerCharacter::BeginPlay()
 
 	//cadena es un object, hay que usar el puntero, se coloca un *cadena
 	UE_LOG(LogTemp, Warning, TEXT("%s %d %f"), *cadena, entero, flotante);
+
+	/**
+	 * Probando comentarios en el editor
+	 */
+	constexpr int Key = -1;
+	if(GEngine)
+	{
+		constexpr float Duration = 3.5;
+		GEngine->AddOnScreenDebugMessage(Key, Duration, FColor::Cyan, TEXT("mensaje de prueba"));
+	}
 }
 
 // Called every frame
