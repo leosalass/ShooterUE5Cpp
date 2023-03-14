@@ -3,3 +3,6 @@
 
 #include "ShooterUE5CppGameModeBase.h"
 
+AShooterUE5CppGameModeBase::AShooterUE5CppGameModeBase()
+{
+}

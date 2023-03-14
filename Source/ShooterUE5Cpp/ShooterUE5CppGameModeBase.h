@@ -13,5 +13,8 @@ UCLASS()
 class SHOOTERUE5CPP_API AShooterUE5CppGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
+
+public:
+	AShooterUE5CppGameModeBase();
 	
 };
