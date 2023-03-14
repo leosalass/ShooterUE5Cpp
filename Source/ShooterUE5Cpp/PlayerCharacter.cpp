@@ -19,7 +19,12 @@ void APlayerCharacter::BeginPlay()
 	/**
 	 * probando comentarios en console
 	 */
-	UE_LOG(LogTemp, Warning, TEXT("Log temporal de prueba usando un tipo warning"));
+	FString cadena = "Log temporal de prueba usando un tipo warning";
+	int entero = 5;
+	float flotante = 7.3;
+
+	//cadena es un object, hay que usar el puntero, se coloca un *cadena
+	UE_LOG(LogTemp, Warning, TEXT("%s %d %f"), *cadena, entero, flotante);
 }
 
 // Called every frame
